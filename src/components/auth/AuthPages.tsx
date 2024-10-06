@@ -8,19 +8,19 @@ const AuthPages = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [name, setName] = useState('');
-    const [error, setError] = useState(''); // Ensure this is initialized
+    // const [error, setError] = useState(''); // Ensure this is initialized
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        // Basic validation example
-        if (!email || !password) {
-            setError('Email and password are required.'); // Use setError to set the error message
-            return;
-        }
+        // // Basic validation example
+        // if (!email || !password) {
+        //     setError('Email and password are required.'); // Use setError to set the error message
+        //     return;
+        // }
 
-        // Clear any previous errors
-        setError('');
+        // // Clear any previous errors
+        // setError('');
 
         console.log('Form submitted:', { email, password, name });
         // Add your authentication logic here
