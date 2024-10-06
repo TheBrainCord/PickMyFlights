@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Plane } from 'lucide-react';
 
-const AuthLayout = ({ children }) => {
+interface AuthLayoutProps {
+  children: ReactNode; // Explicitly type children as ReactNode
+}
+
+
+const AuthLayout: React.FC<AuthLayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col">
       {/* Header */}
