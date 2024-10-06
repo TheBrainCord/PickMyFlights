@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Eye, EyeOff, Mail, Lock, User, ArrowRight } from 'lucide-react';
 import { Alert, AlertDescription } from '@/components/ui/alert';
+import error from 'next/error';
 
 const AuthPages = () => {
     const [isLogin, setIsLogin] = useState(true);
