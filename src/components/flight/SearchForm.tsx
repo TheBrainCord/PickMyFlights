@@ -21,6 +21,9 @@ const SearchForm = () => {
 
       {/* Right Side: Flight Search Form */}
       <div className="lg:w-1/2 p-4">
+        <h1 className="text-4xl font-bold text-blue-600 text-center font-sans-serif">
+            Book your flight
+          </h1>
         <form className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Departure City */}
           <input type="text" placeholder="Departure City" className="p-3 border rounded-md" />
